@@ -3,7 +3,7 @@ from __future__ import absolute_import
 from django.conf.urls import url
 from django.contrib.contenttypes.views import shortcut
 
-from django_comments.feeds import LatestCommentFeed
+from commentary.feeds import LatestCommentFeed
 
 from custom_comments import views
 

@@ -7,7 +7,7 @@ from django.contrib.contenttypes.models import ContentType
 from django.contrib.sites.models import Site
 from django.test.utils import override_settings
 
-from django_comments.models import Comment
+from commentary.models import Comment
 
 from . import CommentTestCase
 from testapp.models import Article

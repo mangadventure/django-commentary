@@ -7,8 +7,8 @@ from django.template import Template, Context
 from django.test.client import RequestFactory
 from django.test.utils import override_settings
 
-from django_comments.forms import CommentForm
-from django_comments.models import Comment
+from commentary.forms import CommentForm
+from commentary.models import Comment
 
 from testapp.models import Article, Author
 from . import CommentTestCase

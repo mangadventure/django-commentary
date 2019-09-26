@@ -4,13 +4,13 @@ Quick start guide
 
 To get started using the ``comments`` app, follow these steps:
 
-#. Install the comments app by running ``pip install django-contrib-comments``.
+#. Install the comments app by running ``pip install django-commentary``.
 
 #. :ref:`Enable the "sites" framework <enabling-the-sites-framework>` by adding
    ``'django.contrib.sites'`` to :setting:`INSTALLED_APPS` and defining
    :setting:`SITE_ID`.
 
-#. Install the comments framework by adding ``'django_comments'`` to
+#. Install the comments framework by adding ``'commentary'`` to
    :setting:`INSTALLED_APPS`.
 
 #. Run ``manage.py migrate`` so that Django will create the comment tables.
@@ -21,7 +21,7 @@ To get started using the ``comments`` app, follow these steps:
 
         urlpatterns = [
             ...
-            url(r'^comments/', include('django_comments.urls')),
+            url(r'^comments/', include('commentary.urls')),
             ...
         ]
 
@@ -115,7 +115,7 @@ For example::
         ...
     {% endfor %}
 
-This returns a list of :class:`~django_comments.models.Comment` objects;
+This returns a list of :class:`~commentary.models.Comment` objects;
 see :doc:`the comment model documentation <models>` for
 details.
 
@@ -335,3 +335,5 @@ output the CSRF token and cookie.
 
 .. _cross site request forgery protection: https://docs.djangoproject.com/en/stable/ref/csrf/
 .. _honeypot: http://en.wikipedia.org/wiki/Honeypot_(computing)
+
+.. vim:ft=rst:

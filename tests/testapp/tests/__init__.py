@@ -6,8 +6,8 @@ from django.contrib.sites.models import Site
 from django.test import TestCase
 from django.test.utils import override_settings
 
-from django_comments.forms import CommentForm
-from django_comments.models import Comment
+from commentary.forms import CommentForm
+from commentary.models import Comment
 
 from testapp.models import Article, Author
 

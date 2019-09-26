@@ -22,7 +22,7 @@ settings.configure(
         "django.contrib.sessions",
         "django.contrib.sites",
         "django.contrib.admin",
-        "django_comments",
+        "commentary",
         "testapp",
         "custom_comments",
     ],

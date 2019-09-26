@@ -1,17 +1,15 @@
-===========================
-Django "excontrib" Comments
-===========================
+=================
+Django Commentary
+=================
 
-.. module:: django_comments
-   :synopsis: The package formerly known as "django.contrib.comments".
+.. module:: commentary
+   :synopsis: A fork of "django-contrib-comments".
 
 .. highlightlang:: html+django
 
-Django used to include a comments framework; since Django 1.6 it's been
-separated to a separate project. This is that project.
-
-This framework can be used to attach comments to any model, so you can use it
-for comments on blog entries, photos, book chapters, or anything else.
+This framework is a fork of ``django-contrib-comments`` which used to be
+included in Django. It can be used to attach comments to any model, so
+you can use it on blog entries, photos, book chapters, or anything else.
 
 Contents
 ================
@@ -27,5 +25,5 @@ Contents
    moderation
    example
    settings
-   porting
 
+.. vim:ft=rst:

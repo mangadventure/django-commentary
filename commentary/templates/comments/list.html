@@ -1,0 +1,11 @@
+{% load comments %}
+<dl id="comments">
+  {% for comment in comment_list %}
+    <dt id="c{{ comment.id }}">
+      {{ comment.submit_date }} - {{ comment.user_display }}
+    </dt>
+    <dd>
+      <p>{{ comment.body|safe_comment }}</p>
+    </dd>
+  {% endfor %}
+</dl>

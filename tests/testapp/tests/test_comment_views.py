@@ -3,8 +3,8 @@ from __future__ import absolute_import, unicode_literals
 from django.conf import settings
 from django.contrib.auth.models import User
 
-from django_comments import signals
-from django_comments.models import COMMENT_MAX_LENGTH, Comment
+from commentary import signals
+from commentary.models import COMMENT_MAX_LENGTH, Comment
 
 from . import CommentTestCase
 from testapp.models import Article, Book

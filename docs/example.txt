@@ -141,7 +141,7 @@ enable it in your project's ``urls.py``:
 .. code-block:: python
 
   from django.conf.urls import url
-  from django_comments.feeds import LatestCommentFeed
+  from commentary.feeds import LatestCommentFeed
 
   urlpatterns = [
   # ...
@@ -175,7 +175,7 @@ following way:
 .. code-block:: python
 
    from django.db import models
-   from django_comments.moderation import CommentModerator, moderator
+   from commentary.moderation import CommentModerator, moderator
 
    class Post(models.Model):
        title   = models.CharField(max_length = 255)
@@ -203,3 +203,5 @@ The moderator can ``Flag``, ``Approve`` or ``Remove`` comments using the
      Only a super-user will be able to delete comments from the database.
      ``Remove Comments`` only sets the ``is_public`` attribute to
      ``False``.
+
+.. vim:ft=rst:

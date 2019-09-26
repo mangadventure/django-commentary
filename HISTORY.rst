@@ -3,6 +3,11 @@
 History
 =======
 
+2.0.0 (upcoming)
+----------------
+
+* Forked and rebranded into ``django-commentary``.
+
 1.9.1 (2019-02-20)
 ------------------
 
@@ -79,7 +84,6 @@ History
 ------------------
 
 * Fixed migrations not working when installed as an egg.
-
 
 1.6.0 (2016-04-29)
 ------------------

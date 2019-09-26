@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 
-from django_comments.models import Comment
+from commentary.models import Comment
 
 from . import CommentTestCase
 from testapp.models import Author, Article

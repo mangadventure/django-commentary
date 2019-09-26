@@ -9,13 +9,15 @@ with open('HISTORY.rst') as history_file:
 long_description = readme + history
 
 setup(
-    name='django-contrib-comments',
-    version='1.9.1',
-    url="https://github.com/django/django-contrib-comments",
-    description='The code formerly known as django.contrib.comments.',
+    name='django-commentary',
+    version='2.0.0.dev0',
+    url='https://github.com/mangadventure/django-commentary',
+    description='A fork of django-contrib-comments.',
     long_description=long_description,
     author='Django Software Foundation',
     author_email='jacob@jacobian.org',
+    maintainer='MangAdventure',
+    maintainer_email='chronobserver@disroot.org',
     license='BSD',
     platforms='any',
     zip_safe=False,

@@ -3,7 +3,7 @@ from django.contrib.auth.views import LoginView, LogoutView
 
 
 urlpatterns = [
-    url(r'^', include('django_comments.urls')),
+    url(r'^', include('commentary.urls')),
 
     # Provide the auth system login and logout views
     url(r'^accounts/login/$', LoginView.as_view(template_name='login.html')),
