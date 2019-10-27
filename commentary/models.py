@@ -4,19 +4,11 @@ from django.utils.encoding import python_2_unicode_compatible
 from django.utils.translation import ugettext_lazy as _
 
 from . import get_user_display
-from .abstracts import BaseCommentAbstractModel, CommentAbstractModel
+from .abstracts import CommentAbstractModel
 
 
 class Comment(CommentAbstractModel):
-    def is_removable_by(self, user):
-        return user == self.user or \
-            user.perms.has_perm('commentary.can_moderate')
-
-    def is_editable_by(self, user):
-        return user == self.user
-
     class Meta(CommentAbstractModel.Meta):
-        db_table = 'commentary'
         index_together = (
             ('content_type', 'object_pk')
         )
@@ -56,7 +48,6 @@ class CommentFlag(models.Model):
     MODERATOR_APPROVAL = 'moderator approval'
 
     class Meta:
-        db_table = 'django_comment_flags'
         unique_together = (
             ('user', 'comment', 'flag'),
         )

@@ -14,7 +14,7 @@ USERNAME_FIELD = 'user__' + get_user_model().USERNAME_FIELD
 
 class CommentsAdmin(admin.ModelAdmin):
     list_display = (
-        'user', 'content_type', 'object_pk',
+        'user', 'content_type', 'object_pk', 'parent',
         'submit_date', 'is_public', 'is_removed'
     )
     list_filter = (
@@ -23,7 +23,7 @@ class CommentsAdmin(admin.ModelAdmin):
     )
     date_hierarchy = 'submit_date'
     ordering = ('-submit_date',)
-    raw_id_fields = ('user',)
+    raw_id_fields = ('user', 'parent')
     search_fields = ('body', USERNAME_FIELD)
     actions = ('flag_comments', 'approve_comments', 'remove_comments')
 

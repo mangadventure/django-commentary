@@ -15,7 +15,8 @@ class Migration(migrations.Migration):
             model_name='comment',
             name='user_email',
             field=models.EmailField(
-                max_length=254, verbose_name="user's email address",
-                blank=True),
+                max_length=254, blank=True,
+                verbose_name="user's email address",
+            ),
         ),
     ]

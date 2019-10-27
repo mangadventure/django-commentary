@@ -63,7 +63,7 @@ def post_comment(request, next=None, using=None):
     except (ValueError, ValidationError) as e:
         return CommentPostBadRequest(
             'Attempting to get content-type %r '
-            'and object PK %r exists raised %s' % (
+            'and object PK %r raised %s' % (
                 escape(ctype), escape(object_pk), e.__class__.__name__
             )
         )

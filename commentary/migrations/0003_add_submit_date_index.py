@@ -14,7 +14,10 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='comment',
             name='submit_date',
-            field=models.DateTimeField(default=None, verbose_name='date/time submitted', db_index=True),
+            field=models.DateTimeField(
+                default=None, db_index=True,
+                verbose_name='date/time submitted'
+            ),
             preserve_default=True,
         ),
     ]
