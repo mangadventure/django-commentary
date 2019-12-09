@@ -1,5 +1,3 @@
-from __future__ import absolute_import
-
 from django import http
 from django.apps import apps
 from django.conf import settings

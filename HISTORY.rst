@@ -7,6 +7,7 @@ History
 ----------------
 
 * Forked and rebranded into ``django-commentary``.
+* Dropped support for Python<3.6 and Django<3.0.
 
 1.9.1 (2019-02-20)
 ------------------

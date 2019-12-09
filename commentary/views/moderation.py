@@ -1,5 +1,3 @@
-from __future__ import absolute_import
-
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.sites.shortcuts import get_current_site
 from django.http import HttpResponseRedirect

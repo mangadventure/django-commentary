@@ -1,5 +1,3 @@
-from __future__ import unicode_literals
-
 from django.conf import settings
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
@@ -7,7 +5,6 @@ from django.contrib.sites.models import Site
 from django.core.validators import int_list_validator
 from django.db import models, transaction
 from django.urls import reverse
-from django.utils.encoding import python_2_unicode_compatible
 from django.utils.html import strip_tags
 from django.utils.functional import cached_property
 from django.utils.translation import ugettext_lazy as _
@@ -125,7 +122,6 @@ class AbstractTreeModel(models.Model):
         ordering = ('path',)
 
 
-@python_2_unicode_compatible
 class CommentAbstractModel(AbstractTreeModel, BaseCommentAbstractModel):
     """A user's comment about some object."""
     user = models.ForeignKey(

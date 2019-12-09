@@ -1,6 +1,5 @@
 from django.conf import settings
 from django.db import models
-from django.utils.encoding import python_2_unicode_compatible
 from django.utils.translation import ugettext_lazy as _
 
 from . import get_user_display
@@ -14,7 +13,6 @@ class Comment(CommentAbstractModel):
         )
 
 
-@python_2_unicode_compatible
 class CommentFlag(models.Model):
     """
     Records a flag on a comment. This is intentionally flexible;

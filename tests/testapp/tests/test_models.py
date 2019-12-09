@@ -1,5 +1,3 @@
-from __future__ import absolute_import
-
 from commentary.models import Comment
 
 from . import CommentTestCase
