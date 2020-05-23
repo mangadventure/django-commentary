@@ -22,6 +22,7 @@ setup(
         'Environment :: Web Environment',
         'Framework :: Django',
         'Framework :: Django :: 3.0',
+        'Framework :: Django :: 3.1',
         'Intended Audience :: Developers',
         'Natural Language :: English',
         'License :: OSI Approved :: BSD License',
