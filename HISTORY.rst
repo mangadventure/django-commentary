@@ -9,6 +9,7 @@ History
 
 * Forked and rebranded into ``django-commentary``.
 * Dropped support for Python<3.6 and Django<3.0.
+* Added the ``delete_stale_comments`` management command.
 
 1.9.1 (2019-02-20)
 ------------------
