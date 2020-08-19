@@ -10,6 +10,7 @@ History
 * Forked and rebranded into ``django-commentary``.
 * Dropped support for Python<3.6 and Django<3.0.
 * Added the ``delete_stale_comments`` management command.
+* Added db_index to ``object_pk`` and ``is_removed`` fields.
 
 1.9.1 (2019-02-20)
 ------------------
