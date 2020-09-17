@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 # Django Comments documentation build configuration file, created by
 # sphinx-quickstart on Mon Mar 11 10:23:49 2013.
 #
@@ -43,8 +41,8 @@ source_suffix = '.txt'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Django User Comments'
-copyright = '2019, MangAdventure'
+project = 'Django Commentary'
+copyright = 'MangAdventure'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -186,8 +184,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-    ('newindex', 'DjangoUserComments.tex',
-     'Django User Comments Documentation',
+    ('index', 'DjangoCommentary.tex',
+     'Django Commentary Documentation',
      'MangAdventure', 'manual'),
 ]
 
@@ -217,8 +215,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('newindex', 'djangousercomments',
-     'Django User Comments Documentation',
+    ('index', 'djangocommentary',
+     'Django Commentary Documentation',
      ['MangAdventure'], 1)
 ]
 
@@ -232,10 +230,10 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    ('newindex', 'DjangoUserComments',
-     'Django User Comments Documentation',
-     'MangAdventure', 'DjangoUserComments',
-     'A fork of django-contrib-comments.', 'Miscellaneous'),
+    ('index', 'DjangoCommentary',
+     'Django Commentary Documentation',
+     'MangAdventure', 'DjangoCommentary',
+     'A Django comment framework.', 'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.
@@ -251,10 +249,10 @@ texinfo_documents = [
 # -- Options for Epub output ---------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = 'Django User Comments'
+epub_title = 'Django Commentary'
 epub_author = 'MangAdventure'
 epub_publisher = 'MangAdventure'
-epub_copyright = '2019, MangAdventure'
+epub_copyright = copyright
 
 # The language of the text. It defaults to the language option
 # or en if the language is not set.
@@ -293,9 +291,9 @@ epub_copyright = '2019, MangAdventure'
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {
-    'python': ('http://docs.python.org/', None),
+    'python': ('https://docs.python.org/', None),
     'django': (
-        'http://docs.djangoproject.com/en/stable',
-        'http://docs.djangoproject.com/en/stable/_objects'
+        'https://docs.djangoproject.com/en/stable',
+        'https://docs.djangoproject.com/en/stable/_objects'
     ),
 }
