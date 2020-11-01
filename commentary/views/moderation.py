@@ -39,6 +39,7 @@ def flag(request, comment_id, next=None):
 
 
 @csrf_protect
+@login_required
 @permission_required('commentary.can_moderate')
 def delete(request, comment_id, next=None):
     """
@@ -65,6 +66,7 @@ def delete(request, comment_id, next=None):
 
 
 @csrf_protect
+@login_required
 @permission_required("commentary.can_moderate")
 def approve(request, comment_id, next=None):
     """
