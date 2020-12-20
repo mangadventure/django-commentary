@@ -1,5 +1,6 @@
-from django.conf.urls import url
 from django.contrib import admin
+from django.urls import path
+
 from commentary.admin import CommentsAdmin
 from commentary.models import Comment
 
@@ -14,6 +15,6 @@ admin_site2.disable_action('delete_selected')
 admin_site2.register(Comment, CommentsAdmin)
 
 urlpatterns = [
-    url(r'^admin/', admin_site.urls),
-    url(r'^admin2/', admin_site2.urls),
+    path('admin/', admin_site.urls),
+    path('admin2/', admin_site2.urls),
 ]
