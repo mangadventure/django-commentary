@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth import get_user_model
-from django.utils.translation import ugettext_lazy as _, ungettext
+from django.utils.translation import gettext_lazy as _, ngettext
 
 from commentary import get_model
 from commentary.views.moderation import (
@@ -38,7 +38,7 @@ class CommentsAdmin(admin.ModelAdmin):
     def flag_comments(self, request, queryset):
         self._bulk_flag(
             request, queryset, perform_flag,
-            lambda n: ungettext('flagged', 'flagged', n)
+            lambda n: ngettext('flagged', 'flagged', n)
         )
 
     flag_comments.short_description = _('Flag selected comments')
@@ -46,7 +46,7 @@ class CommentsAdmin(admin.ModelAdmin):
     def approve_comments(self, request, queryset):
         self._bulk_flag(
             request, queryset, perform_approve,
-            lambda n: ungettext('approved', 'approved', n)
+            lambda n: ngettext('approved', 'approved', n)
         )
 
     approve_comments.short_description = _('Approve selected comments')
@@ -54,7 +54,7 @@ class CommentsAdmin(admin.ModelAdmin):
     def remove_comments(self, request, queryset):
         self._bulk_flag(
             request, queryset, perform_delete,
-            lambda n: ungettext('removed', 'removed', n)
+            lambda n: ngettext('removed', 'removed', n)
         )
 
     remove_comments.short_description = _('Remove selected comments')
@@ -68,7 +68,7 @@ class CommentsAdmin(admin.ModelAdmin):
         for comment in queryset:
             action(request, comment)
             n_comments += 1
-        msg = ungettext(
+        msg = ngettext(
             '%(count)s comment was successfully %(action)s.',
             '%(count)s comments were successfully %(action)s.', n_comments
         )

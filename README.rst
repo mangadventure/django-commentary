@@ -7,7 +7,7 @@ Django Commentary
    :alt: PyPI
 
 .. image:: https://img.shields.io/travis/mangadventure/django-commentary?label=Travis&logo=travis
-   :target: https://travis-ci.org/mangadventure/django-commentary
+   :target: https://travis-ci.com/mangadventure/django-commentary
    :alt: Travis CI
 
 This framework can be used to attach comments to any model, so you can use it

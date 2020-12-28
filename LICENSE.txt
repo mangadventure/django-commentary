@@ -1,4 +1,4 @@
-Copyright (c) 2019-2020, MangAdventure
+Copyright (c) 2019-2021, MangAdventure
 Copyright (c) 2013-2019, Django Software Foundation and individual contributors
 
 All rights reserved.

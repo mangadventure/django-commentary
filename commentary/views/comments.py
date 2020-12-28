@@ -5,14 +5,12 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.sites.shortcuts import get_current_site
 from django.contrib.messages import error
 from django.core.exceptions import ObjectDoesNotExist, ValidationError
-from django.shortcuts import render
 from django.template.loader import render_to_string
 from django.utils.html import escape
-from django.views.decorators.cache import patch_cache_control
 from django.views.decorators.csrf import csrf_protect
 from django.views.decorators.http import require_POST
 
-from commentary import get_form, get_user_display, signals
+from commentary import get_form, signals
 
 
 class CommentPostBadRequest(http.HttpResponseBadRequest):

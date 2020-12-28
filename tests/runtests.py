@@ -12,7 +12,7 @@ here = os.path.dirname(os.path.abspath(__file__))
 parent = os.path.dirname(here)
 sys.path[0:0] = [here, parent]
 
-from django.conf import settings
+from django.conf import settings  # noqa
 settings.configure(
     DATABASES={'default': {'ENGINE': 'django.db.backends.sqlite3'}},
     INSTALLED_APPS=[
@@ -49,7 +49,7 @@ settings.configure(
     SITE_ID=1,
 )
 
-from django.test.runner import DiscoverRunner
+from django.test.runner import DiscoverRunner  # noqa
 
 
 def main(test_labels=None):
@@ -57,6 +57,7 @@ def main(test_labels=None):
     runner = DiscoverRunner(failfast=True, verbosity=1)
     failures = runner.run_tests(test_labels or ['testapp'], interactive=True)
     sys.exit(failures)
+
 
 if __name__ == '__main__':
     test_labels = None

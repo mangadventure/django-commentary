@@ -6,13 +6,9 @@ from django.contrib.contenttypes.models import ContentType
 from django.forms.utils import ErrorDict
 from django.utils.crypto import salted_hmac, constant_time_compare
 from django.utils.encoding import force_text
-from django.utils.text import get_text_list
-from django.utils.translation import (
-    pgettext_lazy, ungettext, ugettext, ugettext_lazy as _
-)
+from django.utils.translation import gettext_lazy as _
 
 from . import COMMENTS_TIMEOUT, COMMENTS_WIDGET, get_model
-from .models import Comment
 
 
 class CommentSecurityForm(forms.Form):
